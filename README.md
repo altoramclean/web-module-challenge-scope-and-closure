@@ -61,6 +61,8 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+    Closure gives us the ability to bundle functions together. It gives us access to a outer function's scope from an inner function. 
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,9 +84,13 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+  The console.log() is the closure, you can tell because it it refers to ${name} which that value is a parameter in the parent function.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  The name would remain the same but newRoll would change to a random number output
+
+c. What is the lexical scope of `newRoll`? 
+  The lexical scope of `newRoll` is in the function personalDice.
 
 ### Task 3 - Stretch Goals
 
